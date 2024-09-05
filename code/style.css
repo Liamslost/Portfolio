@@ -33,13 +33,11 @@
 body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 /* nav bar */
 
 .nav {
-  overflow: hidden;
   width: 100%;
   height: 5rem;
   margin: 0 auto;
@@ -69,10 +67,9 @@ body {
 }
 
 .nav li :hover {
-  background-color: ;
   border-color: #012225;
   animation: fadein 1s;
-  background-color: none;
+  border-style: outset;
 }
 
 a {
@@ -96,41 +93,39 @@ a {
 
 .logoplace {
   position: relative;
-  bottom: 1rem;
+  bottom: 0.6rem;
 }
 
+/* burger */
+
 /* main */
+
 .main {
-  width: 1000px;
   height: 60rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0px;
+  align-items: cente;
 }
 
 .bgimage {
-  background-color: #9fcbd7;
-  /* background-image: url(../images/container-wall.jpg); */
+  background-color: #00414b;
   margin: 0 auto;
-  width: auto;
 }
 
 .main h1 {
+  color: #9fcbd7;
   font-size: 5rem;
   padding-top: 40px;
-  display: block;
+  display: inline-block;
 }
 
 .typewriter {
   overflow: hidden; /* ensures the content is not revealed until animation */
   white-space: nowrap; /* keeps the content on a single line */
   margin: 0 auto; /* gives the scrolling effect as typing happens */
-  letter-spacing: 0.15em;
-
-  border-right: 0.15em solid #f0f0f0;
-
+  letter-spacing: 0.5rem;
+  border-right: 0.5rem solid #f0f0f0;
   animation: typing 3s steps(25, end), blink-caret 1s step-end infinite;
 }
 
@@ -155,32 +150,26 @@ a {
 
 .main h2 {
   font-size: 3rem;
-  padding-top: 40px;
+  padding-top: 2rem;
 }
 
 .main li {
-  width: 1000px;
+  width: 10rem;
   display: inline;
 }
 
 .icon {
-  height: 50px;
+  height: 4rem;
 }
 
-.icon-box {
-  height: 100px;
-  width: 400px;
+.icon:hover {
+  border: 0.25rem outset #adab9e;
+  border-radius: 5rem;
+  animation: fadein 1s;
 }
 
 .icon-box ul {
   display: flex;
-}
-
-.icon-github {
-  background: url(../icons/icon-github-512.png);
-  height: 20px;
-  width: 20px;
-  display: block;
 }
 
 .center {
@@ -193,103 +182,104 @@ a {
 
 /* projects */
 
-.projectsbox {
-  border: 3px solid none;
-  background-color: #d9e1ea;
-  padding-bottom: 5rem;
-  width: 100%;
-  height: 55rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+.projects {
 }
 
-.projectsicon {
-  border: 3px solid none;
-  color: #9fcbd7;
-  background-color: #d9e1ea;
+.wrapper {
   display: flex;
   justify-content: center;
+}
+
+.projectsflex {
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+.divs4lyf {
+  height: 30rem;
+  width: auto;
+}
+
+.projectsbox {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-row: 1/1;
-  grid-column: 1/1;
-  position: sticky;
-  top: 5rem;
+  margin: 1rem 6rem;
 }
 
 .project-tab1 {
-  border: 3px solid #adab9e;
-  background-color: #d9e1ea;
+  height: 5rem;
+  width: 15rem;
+  border: 0.5rem solid #adab9e;
+  background-color: none;
+  font-size: 2rem;
+  padding: 1rem;
   margin: 3rem;
   border-radius: 3rem;
-  grid-row: 1/2;
-  grid-column: 2/3;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   top: 5rem;
 }
 
 .project-tab2 {
-  border: 3px solid #00414b;
-  background-color: #d9e1ea;
+  height: 5rem;
+  width: 15rem;
+  border: 0.5rem solid #00414b;
+  background-color: none;
+  font-size: 2rem;
+  padding: 1rem;
   margin: 3rem;
   border-radius: 3rem;
-  grid-row: 1/2;
-  grid-column: 3/3;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   top: 5rem;
 }
 
 .project-tab3 {
-  border: 3px solid #9fcbd7;
-  background-color: #d9e1ea;
+  height: 5rem;
+  width: 15rem;
+  border: 0.5rem solid #9fcbd7;
+  background-color: none;
+  font-size: 2rem;
+  padding: 1rem;
   margin: 3rem;
   border-radius: 3rem;
-  grid-row: 1/2;
-  grid-column: 4/4;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   top: 5rem;
 }
 
 .more-tab {
-  border: 3px solid #012225;
-  background-color: #d9e1ea;
+  height: 5rem;
+  width: 15rem;
+  border: 10px solid #012225;
+  background-color: none;
+  font-size: 2rem;
+  padding: 1rem;
   margin: 3rem;
   border-radius: 3rem;
-  grid-row: 1/2;
-  grid-column: 5/5;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   top: 5rem;
 }
 
-.displaybox {
-  border: 3px solid hsla(0, 0%, 0%, 0.077);
-  border-radius: 2rem;
-  margin-top: 2rem;
-  padding-top: 4rem;
-  grid-area: 2 / 2 / 6 / 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
 .projectcontent {
-  height: 60rem;
+  height: 100%rem;
   margin-bottom: 4rem;
   display: flex;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .displaytext {
@@ -311,22 +301,9 @@ a {
   overflow: hidden;
 }
 
-.imageplace {
-  grid-row: 2 / span 2;
-  grid-column: 10 / span 1;
-}
-
 .imagesize {
   height: 100%;
   width: 100%;
-}
-
-.projecth1 {
-  grid-row: 4/6;
-  grid-column: 2/1;
-}
-
-.projectinfo {
 }
 
 #seemorebut {
@@ -339,15 +316,16 @@ a {
   padding: 1rem 0rem;
 }
 
-#project1 {
+#seemorebut a {
+  text-decoration: none;
 }
-
 .project-tab1:hover,
 .project-tab2:hover,
 .project-tab3:hover,
 .more-tab:hover {
   background-color: none;
   border-color: #333333;
+  border-style: outset;
   animation: fadein 1s;
   background-color: none;
 }
@@ -355,25 +333,22 @@ a {
 /* contact */
 
 .contactcontainer {
-  background-color: #9fcbd7;
+  background-color: #00414b;
   height: 8rem;
-  margin: 0px;
 }
 
 .hiddenboxcontainer {
-  background-color: #9fcbd7;
+  background-color: #00414b;
   height: 25rem;
-  width: 100%;
-  padding: 0 20rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .hiddenboxes {
-  border: 3px solid #adab9e;
+  border: 1rem solid #adab9e;
   border-radius: 10rem;
-  color: #9fcbd7;
+  color: #00414b;
   height: 20rem;
   width: 20rem;
   display: flex;
@@ -382,14 +357,16 @@ a {
 }
 
 .contactcontainer h1 {
+  color: #9fcbd7;
+  width: 100%;
   position: relative;
   top: 3rem;
   left: 3rem;
-  margin: 0px;
+  margin-top: 0;
 }
 
 .hiddenboxes:hover {
-  color: #00414b;
+  color: #adab9e;
 }
 
 /* animation */
@@ -402,3 +379,127 @@ a {
     opacity: 1;
   }
 }
+
+/* responsive */
+
+@media screen and (max-width: 390px) {
+  /* navbar */
+  .nav ul li a {
+    display: none;
+  }
+
+  /* main */
+  body {
+    width: 100%;
+  }
+
+  .bgimage {
+    height: 46rem;
+  }
+  .main h1 {
+    font-size: 1rem;
+  }
+  .icon-box {
+    width: 20rem;
+  }
+
+  /* projects */
+
+  .wrapper {
+    height: 35rem;
+  }
+  section.projectsbox {
+    height: 4rem;
+  }
+  .projectsbox div {
+    height: 2rem;
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 3rem;
+    border-width: 0.15rem;
+  }
+  div.displaytext {
+    margin-left: 1rem;
+    padding: 0;
+  }
+
+  image#image3.imagesize {
+    height: 2rem;
+  }
+
+  div.projectsflex {
+    width: 100%;
+    height: 90%;
+    padding: 0;
+  }
+
+  p.projectinfo {
+    width: 90%;
+    height: 50%;
+  }
+
+  section.wrapper {
+  }
+  div.displaytext {
+    display: flex;
+    align-content: flex-end;
+    width: 100%;
+    height: 50%;
+    margin: 0rem;
+  }
+
+  .displaytext p {
+    margin-left: 0;
+    padding: 0;
+    height: 50%;
+  }
+
+  .displayimage img {
+    height: 100%;
+  }
+
+  div.displayimage {
+    margin-left: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  div.displaybox {
+    height: 50%;
+  }
+
+  div.projectcontent {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* contact */
+
+  .hiddenboxes {
+    height: 6rem;
+    width: 6rem;
+    border-width: 0.25rem;
+  }
+  div.hiddenboxes {
+    font-size: 0.5rem;
+  }
+}
+/* @media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 768px){
+
+}
+@media only screen and (min-width: 992px){
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+ */
