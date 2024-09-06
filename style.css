@@ -100,15 +100,32 @@ a {
   bottom: 0.6rem;
 }
 
-/* burger */
-
 /* main */
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
 
 .main {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: cente;
+  align-items: center;
 }
 
 .colors {
@@ -140,25 +157,6 @@ a {
   letter-spacing: 0.5rem;
   border-right: 0.5rem solid #f0f0f0;
   animation: typing 3s steps(25, end), blink-caret 1s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(255, 255, 255);
-  }
 }
 
 .main h2 {
@@ -416,7 +414,7 @@ a {
 
 /* responsive */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   /* navbar */
   .nav ul li a {
     display: none;
