@@ -7,6 +7,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .colors {
   color: #adab9e;
   color: #d9e1ea;
@@ -101,15 +105,24 @@ a {
 /* main */
 
 .main {
-  height: 60rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: cente;
 }
 
+.colors {
+  color: #adab9e;
+  color: #d9e1ea;
+  color: #9fcbd7;
+  color: #00414b;
+  color: #012225;
+}
+
 .bgimage {
-  background-color: #00414b;
+  height: 60rem;
+  background: linear-gradient(141deg, #9fcbd7 10%, #00414b 40%, #012225 75%);
+  /* background-color: #00414b; */
   margin: 0 auto;
 }
 
@@ -186,11 +199,15 @@ a {
 }
 
 .wrapper {
+  background-color: #d9e1ea;
   display: flex;
   justify-content: center;
+  padding-bottom: 8rem;
 }
 
 .projectsflex {
+  border: 1rem solid #f2f2f2;
+  border-radius: 2rem;
   width: 80%;
   padding: 2rem;
   display: flex;
@@ -207,17 +224,22 @@ a {
 }
 
 .projectsbox {
+  background-color: #d9e1ea;
+  
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .project-tab1 {
   height: 5rem;
   width: 15rem;
-  border: 0.5rem solid #adab9e;
+  border: 0.5rem solid #adab9e80;
   background-color: none;
   font-size: 2rem;
   padding: 1rem;
@@ -232,7 +254,7 @@ a {
 .project-tab2 {
   height: 5rem;
   width: 15rem;
-  border: 0.5rem solid #00414b;
+  border: 0.5rem solid #00414b80;
   background-color: none;
   font-size: 2rem;
   padding: 1rem;
@@ -247,7 +269,7 @@ a {
 .project-tab3 {
   height: 5rem;
   width: 15rem;
-  border: 0.5rem solid #9fcbd7;
+  border: 0.5rem solid #9fcbd780;
   background-color: none;
   font-size: 2rem;
   padding: 1rem;
@@ -262,7 +284,7 @@ a {
 .more-tab {
   height: 5rem;
   width: 15rem;
-  border: 10px solid #012225;
+  border: 10px solid #01222580;
   background-color: none;
   font-size: 2rem;
   padding: 1rem;
