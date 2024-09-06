@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="code/modern-normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +18,7 @@
     <nav class="nav">
       <ul>
         <li>
-          <a class="navbuttonleft" link rel="index.html" href="index.html"
-            >home</a
-          >
+          <a class="navbuttonleft" href="#home">home</a>
         </li>
         <li><a href="#projects">projects</a></li>
         <li id="kaush" class="logoplace">liamslost...</li>
@@ -55,6 +53,8 @@
               <a href="https://www.linkedin.com/in/liam-o-connell-409243190/"
                 ><img class="icon" src="../icons/icon-linkedin-512.png"
               /></a>
+              <div id="projects" class="projectslocation" ></div>
+              <div id="home" class="homelocation"></div>
             </li>
           </ul>
         </div>
@@ -62,11 +62,11 @@
     </section>
 
     <!-- projects -->
-    <section id="projects" class="projects">
+    <section id="projects"  class="projects">
       <section class="projectsbox">
-        <div class="project-tab1"><a>PROJECT 1</a></div>
-        <div class="project-tab2"><a>PROJECT 2</a></div>
-        <div class="project-tab3"><a>PROJECT 3</a></div>
+        <div class="project-tab1"><a href="#project1">PROJECT 1</a></div>
+        <div class="project-tab2"><a href="#project2">PROJECT 2</a></div>
+        <div class="project-tab3"><a href="#project3">PROJECT 3</a></div>
         <div class="more-tab"><a link rel="projects" href="projects.html">MORE...</a></div>
       </section>
       <section class="wrapper">
@@ -86,7 +86,7 @@
                 </button>
               </div>
               <div class="displayimage">
-                <img id="project1" class="imagesize" src="../images/pexels-matthardy-3560168.jpg" />
+                <img id="project1" class="imagesize" src="./images/pexels-matthardy-3560168.jpg" />
               </div>
           </div>
           <div  class="projectcontent">
@@ -101,7 +101,7 @@
               </button>
             </div>
             <div class="displayimage">
-              <img id="project2" class="imagesize" src="../images/pexels-muffin-1646311.jpg" />
+              <img id="project2" class="imagesize" src="./images/pexels-muffin-1646311.jpg" />
             </div>
           </div>
           <div  class="projectcontent">
@@ -116,7 +116,7 @@
               </button>
             </div>
             <div class="displayimage">
-              <img id="project3" class="imagesize" src="../images/pexels-thachtran-756856.jpg" />
+              <img id="project3" class="imagesize" src="./images/pexels-thachtran-756856.jpg" />
             </div>
           </div>
         </div>
